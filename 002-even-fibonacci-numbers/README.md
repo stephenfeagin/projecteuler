@@ -8,4 +8,4 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 # Solution
 
-My approach is the same across all three languages. Starting after the first two values in the sequence, keep track of the running sum and the most recent two values. In a loop, get the next value by adding the most recent two together. If the new value is above 4 million, break out of the loop. Otherwise, if the new term is divisible by two, add it to the running total. Update the most recent two terms and continue on with the loop.
+My approach is the same across all three languages. Starting after the first two values in the sequence, keep track of the running sum and the most recent two values. Calculate the next term in the series by adding the previous two. While the new term is less than 4 million, check if it's even. If it is, add it to the running total. Update the last two terms and calculate the next term, then run through the loop again.
